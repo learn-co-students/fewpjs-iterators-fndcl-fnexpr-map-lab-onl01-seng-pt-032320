@@ -11,6 +11,23 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+let titleCased = () => {
+  const newArray = [];
+  for(const title of tutorials){
+    const titleArray = title.split(" ")
+    let finalWord = ""
+    const myArray = []
+    for(const word of titleArray){
+       let first = word.charAt(0)
+       let upper = first.toUpperCase()
+       finalWord = upper + word.slice(1)
+       myArray.push(finalWord)
+    }
+    let joinedString = myArray.join(" ")
+    newArray.push(joinedString)
+    
+  }
+  return newArray
 }
+
+
