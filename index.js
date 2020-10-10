@@ -24,11 +24,6 @@ for (let tutorial of tutorials) {
 
 }
 
-
-
-    
-
-
 const titleCased = () => {
   return newTutorials
 }
