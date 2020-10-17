@@ -13,8 +13,8 @@ const tutorials = [
 
 const titleCased = () => {
   return tutorials.map(tutorials => {
-    return tutorials.toUppercase
+    return tutorials.toUppercase();
   })
   
 }
-// tutorials;
+console.log(titleCased);
