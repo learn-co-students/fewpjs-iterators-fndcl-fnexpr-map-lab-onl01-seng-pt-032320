@@ -11,6 +11,15 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+const titleCased = (input) => {
+//   tutorials.upperCase.split(' ').map(function(word) {
+//   return (word.charAt(0).toUpperCase() + word.slice(1));
+//  }).join(' ');
+
+  return tutorials.map( word => {
+    let words = word.split(' ')
+    let upperCased = words.map( word => word.charAt(0).toUpperCase() + word.slice(1) )
+    let response = upperCased.join(' ')
+    return response
+  })
 }
